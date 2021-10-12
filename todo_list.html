@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+   body{
+       background-color: #E9C9B1;
+   }
+    img{ 
+        height:350px;
+        width: 650px;
+        margin-left: 50px;
+        margin-top:5px;
+
+    }
+    .container  {
+        width:880px;
+        position: absolute;
+        height: 850px;
+        margin-top: 20px;
+   
+    }
+    h1{ color: #997A8D;
+        margin-left: 230px;
+        opacity: 0.5;
+    }
+    h2{color: #997A8D;
+    margin-left: 300px;
+}
+    button{
+        background-color: #BABABA;
+        margin-left:620px;
+        font-size: 30px;
+        color: #7CFC00; 
+     	width:80px; 
+	    height:50px; 
+	    border-radius:40%; 
+        margin-top: -70px;
+        border-bottom: transparent;
+
+    }
+    #form{
+        background-color: #FDE9E0;
+        height: 690px;
+        width: 780px;
+        margin-left: 350px;
+        margin-top: 30px;
+        border-radius: 20px;
+            
+}
+
+
+ input {
+	width:400px; 
+	height:25px;
+	padding: 5px 2px; 
+	background: transparent ; 
+	border:0; 
+	border-bottom: 1px solid ;
+	margin-left:200px;  
+	margin-top:10px;
+}
+
+
+input::placeholder {
+    position:relative;
+    font-size: 20px;
+}
+
+ 
+.todos {
+background: transparent ; 
+margin-left:200px;  
+padding: 0; 
+list-style: none;
+width:400px; 
+height: 100px;
+}
+ 
+.todos li {
+    border-top: 0.3px solid #DD985C
+;
+    cursor: pointer;
+    font-size: 20px;
+    color:#E73E01;
+
+}
+
+.todos li.completed {
+    color:#83A697;
+    text-decoration: line-through;
+}
+
+
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="todo2.js" defer></script>
+</head>
+<body>
+    
+        <div id="form">
+            <img src="iStock-1175302204-2.JPG" >
+            <h1>Manage your task</h1>
+            <h2 id="todolist">Todo List</h2>
+            <input type="text" class="input" placeholder="Add your task"> <button id="push" onclick="inputStyle()">+</button>
+            <ul class="todos" id="todos"></ul>
+        </div>
+    
+     
+</body>
+</html>
